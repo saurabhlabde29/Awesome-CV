@@ -1,22 +1,38 @@
 \cvsection{Projects}
+\begin{flushleft}
+  \par\addvspace{-1.5mm}
+  \fontsize{10pt}{1em}\selectfont\underline{\textbf{\color{black}Verification Projects}} \ \ \textit{(\color{text}Tools: ModelSim, QuestaSim, Veloce Emulator.  Languages: System Verilog )}
+\end{flushleft}
 \begin{cvprojects}
   \cvproject
-    {Functional Verification of AMBA APB Protocol using UVM Framework(SV,Questasim)} 
+    {Functional Verification of AMBA APB Protocol using UVM Framework \fontsize{8pt}{1em}\selectfont(\underline {\color{awesome-red}SV, Questasim})} 
     {\color{darkgray}May. 2018}
     {
       \begin{cvprojectitems}
-        \item {Designed and Implemented a hierarchical, re-usable and emulation compatible verification environment for APB protocol using UVM class libraries}
-        \item {Developed Interface and Environment packages including the slave agent , slave BFM, sequnecer, driver, monitor , predictor model and scoreboard.}
+        \item {Designed and Implemented a hierarchical and re-usable verification environment for APB protocol using UVM class libraries}
         \item {Drafted a test plan for verification and achieved a coverage of 100\% through constrained random tests and directed testing. }
       \end{cvprojectitems}
     }
   \cvproject
-    {Functional Verification of LC3 Microcontroller using UVM Framework(SV,Veloce,Questasim, Scripting)}
-    {September 2015}
+    {Verification Environment for Pipelined LC3 Microcontroller using UVM Framework \fontsize{8pt}{1em}\selectfont(\underline {\color{awesome-red}SV,Questasim,Veloce Emulator})}
+    {\color{darkgray}Dec. 2018}
     {
       \begin{cvprojectitems}
-        \item {Random project I did for fun to try and learn some language}
-        \item {Used some up and coming web framework or something to do something mundane and not interesting to most people but is actually useful to me for this one class I took in undergrad}
+        \item {Designed and Implemented a hierarchical,re-usable and emulation compatible chip-level verification environment for Pipelined LC3 Micro-controller using UVM class libraries}
+        \item {Developed Interface and Environment Packages for all the 5 stages of LC3 pipeline including agents, drivers, BFM's , monitors, environment, subenvironment, predictors and scoreboards}
+        \item {Designed a detailed test plan and achieved 100\% coverage through constrained random testing, assertions and directed test cases.}
+        \item {Automated the process using python scripts and detected the maximum number of bugs in a class of 120 students.}
       \end{cvprojectitems}
     }
+    \par\addvspace{2ex}
+    \cvproject
+    {Hardware accelerator for convolutional neural network using ASIC \fontsize{8pt}{1em}\selectfont(\underline {\color{awesome-red}Verilog, MODELSIM, Synopsys Design Vision})}
+    {\color{darkgray}Nov. 2017}
+    {
+      \begin{cvprojectitems}
+        \item {Designed and Implemented a Hardware for two stage convolutional neural network arithmetic. The Design performs the convolution of two 16 bit integers and outputs a 8 bit vector for object classification . }
+        \item {Design was verified for functional correctness using ModelSim and synthesized using Synopsys Design Vision to be optimized for area and performance .} 
+      \end{cvprojectitems}
+    }
+
 \end{cvprojects}
