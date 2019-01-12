@@ -98,6 +98,7 @@
 \fontdir
 
 
+
 %-------------------------------------------------------------------------------
 %                Configuration for layout
 %-------------------------------------------------------------------------------
@@ -240,6 +241,8 @@
 \newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{graytext}}
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
+
+\newcommand{\rul}[1]{\textcolor{awesome-red}{\underline{\textcolor{black}{#1}}}}
 
 
 %-------------------------------------------------------------------------------
@@ -576,7 +579,7 @@
 \newcommand*{\cventry}[5]{%
   \vspace{-3.0mm}
   \setlength\tabcolsep{0pt}
-  \setlength{\extrarowheight}{-2pt}
+  \setlength{\extrarowheight}{-1pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}

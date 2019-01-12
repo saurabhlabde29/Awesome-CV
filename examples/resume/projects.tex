@@ -1,19 +1,11 @@
+\par\addvspace{1ex}
 \cvsection{Projects}
 \begin{flushleft}
   \par\addvspace{-1.5mm}
-  \fontsize{10.4pt}{1em}\selectfont\underline{\textbf{\color{black}Verification}} \ \ \textit{(\color{text}Tools: ModelSim, QuestaSim, Veloce Emulator.\ \ Languages: System Verilog , Python Scripting)}
+  \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Verification} \ \ \textit{(\color{text}Tools: ModelSim, QuestaSim, Veloce Emulator.\ \ Languages: System Verilog , Python Scripting)}}
 \end{flushleft}
 \par\addvspace{-0.5ex}
 \begin{cvprojects}
-  \cvproject
-    {UVM based Block Level Verification IP for AMBA-APB bus Protocol} 
-    {\color{darkgray}May. 2018}
-    {
-      \begin{cvprojectitems}
-        \item {Designed and Implemented a hierarchical and re-usable verification environment for APB protocol using UVM class libraries}
-        \item {The package includes APB bridge master and APB slave agents, drivers , monitors, environment, sequences and sequencers. }
-      \end{cvprojectitems}
-    }
   \cvproject
     {Emulation Compatible Chip Level Verification Environment for LC3 Microcontroller using UVM Framework }
     {\color{darkgray}Dec. 2018}
@@ -21,30 +13,107 @@
       \begin{cvprojectitems}
         \item {Constructed a hierarchical, re-usable and emulation compatible chip-level verification environment for LC3 Micro-controller using UVM class libraries which includes environments, subenvs, agents, drivers, monitors and BFM's, predictors and scoreboards.}
         \item {Designed a detailed test plan and achieved 100\% coverage through constrained random testing, assertions and directed test cases.}
-        \item {Automated the process using python scripts and detected the maximum number of bugs in a class of 120 students.}
       \end{cvprojectitems}
     }
-    \par\addvspace{3ex}
+
+  \cvproject
+    {UVM based Block Level Verification IP for AMBA-APB bus Protocol} 
+    {\color{darkgray}Aug. 2018}
+    {
+      \begin{cvprojectitems}
+        \item {Designed and Implemented a hierarchical and re-usable verification environment for APB protocol using UVM class libraries}
+        \item {The package includes APB bridge master and APB slave agents, drivers , monitors, environment, sequences and sequencers. }
+      \end{cvprojectitems}
+    }
+
+    \cvproject
+    {Functional Verification of Pipelined LC3 Micro-controller} 
+    {\color{darkgray}April. 2018}
+    {
+      \begin{cvprojectitems}
+        \item {Designed a layered test bench and a cycle accurate behavioral model to verify the data and control path of LC3 micro-controller with a comprehensive instruction set. Full functional coverage was achieved using Constrained random testing and assertions.}
+      \end{cvprojectitems}
+    }
+
+    \par\addvspace{0ex}
     \begin{flushleft}
     \par\addvspace{-1.5mm}
-    \fontsize{10.4pt}{1em}\selectfont\underline{\textbf{\color{black}RTL Design}} \ \ \textit{(\color{text}Tools: ModelSim, Synopsys Design Vision. \ \ Languages: Verilog )}
+    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}RTL Design} \ \ \textit{(\color{text}Tools: ModelSim, Synopsys Design Vision. \ \ Languages: Verilog )}}
     \end{flushleft}
     \par\addvspace{0.3ex}
     \cvproject
-    {Hardware accelerator for convolutional neural network using ASIC }
+    {Hardware accelerator for simplified convolutional neural network }
     {\color{darkgray}Nov. 2017}
     {
       \begin{cvprojectitems}
-        \item {Designed and Implemented a Hardware for two stage convolutional neural network arithmetic. The Design performs the convolution of two 16 bit integers and outputs a 8 bit vector for object classification . }
-        \item {Design was verified for functional correctness using ModelSim and synthesized using Synopsys Design Vision to be optimized for area and performance .} 
+        \item {Designed a synthesizable ASIC implementing the two staged convolutional neural network arithmetic on inputs read from SRAM . }
+        \item {The design was verified for functional correctness and synthesized to achieve minimum area and clock period.} 
+      \end{cvprojectitems}
+    }
+
+    \cvproject
+    {Hardware accelerator for simplified convolutional neural network }
+    {\color{darkgray}Nov. 2017}
+    {
+      \begin{cvprojectitems}
+        \item {Designed a synthesizable ASIC implementing the two staged convolutional neural network arithmetic on inputs read from SRAM . }
+        \item {The design was verified for functional correctness and synthesized to achieve minimum area and clock period.} 
       \end{cvprojectitems}
     }
 
     \par\addvspace{1ex}
     \begin{flushleft}
     \par\addvspace{-1.5mm}
-    \fontsize{10.4pt}{1em}\selectfont\underline{\textbf{\color{black}Architectural Simulators}} \ \ \textit{(\color{text} Languages: C , C++. \ \ Platforms: GPGPU-Sim. )}
+    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Architectural Simulators} \ \ \textit{(\color{text} Languages: C , C++. \ \ Platforms: GPGPU-Sim. )}}
     \end{flushleft}
     \par\addvspace{0.3ex}
+    \cvproject
+    {Phase Aware Warp Schedulling (PAWS) }
+    {\color{darkgray}May. 2017}
+    {
+      \begin{cvprojectitems}
+        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR schedulling policies by leveraging phase information embedded in PTX-Assembly at compile Time.}
+        \item {Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an improvement in IPC over RR and GTO policies.} 
+      \end{cvprojectitems}
+    }
+
+    \cvproject
+    {Dynamic Instruction Schedulling For Out of Order Superscalar Processor }
+    {\color{darkgray}Nov. 2017}
+    {
+      \begin{cvprojectitems}
+        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR schedulling policies by leveraging phase information embedded in PTX-Assembly at compile Time.}
+      \end{cvprojectitems}
+    }
+
+    \cvproject
+    {Phase Aware Warp Schedulling (PAWS) }
+    {\color{darkgray}May. 2017}
+    {
+      \begin{cvprojectitems}
+        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR .}
+        \item {Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an improvement in IPC over RR and GTO policies.} 
+      \end{cvprojectitems}
+    }
+
+    \cvproject
+    {Phase Aware Warp Schedulling (PAWS) }
+    {\color{darkgray}May. 2017}
+    {
+      \begin{cvprojectitems}
+        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO }
+        \item {Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an improvement in IPC over RR and GTO policies.} 
+      \end{cvprojectitems}
+    }
+
+     \cvproject
+    {Phase Aware Warp Schedulling (PAWS) }
+    {\color{darkgray}May. 2017}
+    {
+      \begin{cvprojectitems}
+        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO }
+        \item {Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an improvement in IPC over RR and GTO policies.} 
+      \end{cvprojectitems}
+    }
 
 \end{cvprojects}
