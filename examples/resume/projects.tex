@@ -2,7 +2,7 @@
 \cvsection{Projects}
 \begin{flushleft}
   \par\addvspace{-1.5mm}
-  \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Verification} \ \ \textit{(\color{text}Tools: ModelSim, QuestaSim, Veloce Emulator.\ \ Languages: System Verilog , Python Scripting)}}
+  \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Verification} \ \ \textit{(\color{text}Tools: ModelSim, QuestaSim, Veloce Emulator.\ \ \ Languages: System Verilog , Python Scripting)}}
 \end{flushleft}
 \par\addvspace{-0.5ex}
 \begin{cvprojects}
@@ -27,7 +27,7 @@
     }
 
     \cvproject
-    {Functional Verification of Pipelined LC3 Micro-controller} 
+    {Functional Verification of 5-stage Pipelined LC3 Micro-controller} 
     {\color{darkgray}April. 2018}
     {
       \begin{cvprojectitems}
@@ -52,28 +52,26 @@
     }
 
     \cvproject
-    {Hardware accelerator for simplified convolutional neural network }
-    {\color{darkgray}Nov. 2017}
+    {Synthesizable ASIC for SHA-256 Cryptographic Hash Algorithm }
+    {\color{darkgray}Jan. 2019}
     {
       \begin{cvprojectitems}
-        \item {Designed a synthesizable ASIC implementing the two staged convolutional neural network arithmetic on inputs read from SRAM . }
-        \item {The design was verified for functional correctness and synthesized to achieve minimum area and clock period.} 
+        \item {Implemented the SHA-256 hash algorithm using Verilog HDL . Synthesized the RTL to gate level using Synopsys design vision and ensured the setup and hold time constraints are met. Leveraged a pipelined architecture to optimize the design for performance. }
       \end{cvprojectitems}
     }
 
     \par\addvspace{1ex}
     \begin{flushleft}
     \par\addvspace{-1.5mm}
-    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Architectural Simulators} \ \ \textit{(\color{text} Languages: C , C++. \ \ Platforms: GPGPU-Sim, Trace Driven Simulators. )}}
+    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Architectural Simulators and Operating Systems} \ \ \textit{(\color{text} Languages: C , C++. \ \ Platforms: GPGPU-Sim, Trace Driven Simulators. )}}
     \end{flushleft}
     \par\addvspace{0.3ex}
     \cvproject
-    {Phase Aware Warp Schedulling (PAWS) }
-    {\color{darkgray}May. 2017}
+    {Phase Aware Warp Schedulling (PAWS) in GPGPU }
+    {\color{darkgray}May. 2018}
     {
       \begin{cvprojectitems}
-        \item {Extended GPGPU-sim \textbf{(C++)} to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR schedulling policies by leveraging phase information embedded in PTX-Assembly at compile Time.}
-        \item {Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an improvement in IPC over RR and GTO policies.} 
+        \item {Extended GPGPU-sim \textbf{(C++)} to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR policies. Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an 8\% improvement in the IPC.} 
       \end{cvprojectitems}
     }
 
@@ -101,15 +99,24 @@
     {\color{darkgray}Oct. 2017}
     {
       \begin{cvprojectitems1}
-        \item {Implemented a simulator \textbf{(C++)} to model bimodal, gshare and hybrid branch predictors with Branch Target Buffer(BTB). }
+        \item {Developed a simulator \textbf{(C++)} to model bimodal, gshare and hybrid branch predictors with Branch Target Buffer(BTB). }
       \end{cvprojectitems1}
     }
     \par\addvspace{-1ex}
      \cvproject
-    {Phase Aware Warp Schedulling (PAWS) }
-    {\color{darkgray}May. 2017}
+    {Bus Based and Directory Based Cache Coherence Protocol Simulator }
+    {\color{darkgray}Oct. 2017}
     { \begin{cvprojectitems1}
-        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO }
+        \item {Implemented bus based (MSI, MOSI , MOESI) and directory based (MESI) cache coherence protocols in a multicore system with multiple directory formats.}
+      \end{cvprojectitems1}
+    }
+    \par\addvspace{-1ex}
+    \cvproject
+    {Virtual Memory Management System in Xinu Operating System }
+    {\color{darkgray}Dec. 2018}
+    {
+      \begin{cvprojectitems1}
+        \item {Extended the x86 based Xinu OS to support a virtual memory system with demand paging and lazy allocation optimizations. }
       \end{cvprojectitems1}
     }
 
