@@ -64,7 +64,7 @@
     \par\addvspace{1ex}
     \begin{flushleft}
     \par\addvspace{-1.5mm}
-    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Architectural Simulators} \ \ \textit{(\color{text} Languages: C , C++. \ \ Platforms: GPGPU-Sim. )}}
+    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Architectural Simulators} \ \ \textit{(\color{text} Languages: C , C++. \ \ Platforms: GPGPU-Sim, Trace Driven Simulators. )}}
     \end{flushleft}
     \par\addvspace{0.3ex}
     \cvproject
@@ -72,48 +72,45 @@
     {\color{darkgray}May. 2017}
     {
       \begin{cvprojectitems}
-        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR schedulling policies by leveraging phase information embedded in PTX-Assembly at compile Time.}
+        \item {Extended GPGPU-sim \textbf{(C++)} to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR schedulling policies by leveraging phase information embedded in PTX-Assembly at compile Time.}
         \item {Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an improvement in IPC over RR and GTO policies.} 
       \end{cvprojectitems}
     }
 
     \cvproject
-    {Dynamic Instruction Schedulling For Out of Order Superscalar Processor }
+    {Dynamic Instruction Schedulling in an OOO Superscalar Processor }
     {\color{darkgray}Nov. 2017}
     {
       \begin{cvprojectitems}
-        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR schedulling policies by leveraging phase information embedded in PTX-Assembly at compile Time.}
+        \item {Implemented a trace driven simulator \textbf{(C)} for an out-of-order superscalar processor based on Tomasulo’s algorithm that fetches, dispatches, issues and executes N instructions per cycle.The simulator successfully handled RAW, WAW and WAR hazards .}
       \end{cvprojectitems}
     }
 
     \cvproject
-    {Phase Aware Warp Schedulling (PAWS) }
-    {\color{darkgray}May. 2017}
+    {Multi-level Cache Hierarchy Simulator }
+    {\color{darkgray}Sept. 2017}
     {
       \begin{cvprojectitems}
-        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR .}
-        \item {Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an improvement in IPC over RR and GTO policies.} 
+        \item {Modelled a trace driven, highly parameterized two-level cache hierarchy simulator \textbf{(C++)} with a support for L1 victim cache. }
+        \item {Implemented LRU ,LFU cache replacement policies along with write through - not allocate and write back - allocate write policies.} 
       \end{cvprojectitems}
     }
 
     \cvproject
-    {Phase Aware Warp Schedulling (PAWS) }
-    {\color{darkgray}May. 2017}
+    {Dynamic Branch Predictor Simulator }
+    {\color{darkgray}Oct. 2017}
     {
-      \begin{cvprojectitems}
-        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO }
-        \item {Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an improvement in IPC over RR and GTO policies.} 
-      \end{cvprojectitems}
+      \begin{cvprojectitems1}
+        \item {Implemented a simulator \textbf{(C++)} to model bimodal, gshare and hybrid branch predictors with Branch Target Buffer(BTB). }
+      \end{cvprojectitems1}
     }
-
+    \par\addvspace{-1ex}
      \cvproject
     {Phase Aware Warp Schedulling (PAWS) }
     {\color{darkgray}May. 2017}
-    {
-      \begin{cvprojectitems}
+    { \begin{cvprojectitems1}
         \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO }
-        \item {Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an improvement in IPC over RR and GTO policies.} 
-      \end{cvprojectitems}
+      \end{cvprojectitems1}
     }
 
 \end{cvprojects}
