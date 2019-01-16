@@ -198,7 +198,7 @@
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{black}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{black}{#1}}}
-\newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{black}}
+\newcommand*{\paragraphstyle}{\fontsize{9.5pt}{1em}\bodyfont\upshape\color{black}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10.4pt}{1em}\bodyfont\bfseries\color{black} #1}}

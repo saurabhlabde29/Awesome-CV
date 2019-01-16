@@ -2,7 +2,7 @@
 \cvsection{Projects}
 \begin{flushleft}
   \par\addvspace{-1.5mm}
-  \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Verification} \ \ \textit{(\color{text}Tools: ModelSim, QuestaSim, Veloce Emulator.\ \ \ Languages: System Verilog , Python Scripting)}}
+  \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Verification} \ \ \textit{(\color{text}EDA Tools: ModelSim, QuestaSim, Veloce Emulator.\ \ \ Languages: System Verilog , Python Scripting)}}
 \end{flushleft}
 \par\addvspace{-0.5ex}
 \begin{cvprojects}
@@ -11,7 +11,7 @@
     {\color{darkgray}Dec. 2018}
     {
       \begin{cvprojectitems}
-        \item {Constructed a hierarchical, re-usable and emulation compatible chip-level verification environment for LC3 Micro-controller using UVM class libraries which includes environments, subenvs, agents, drivers, monitors and BFM's, predictors and scoreboards.}
+        \item {Constructed a hierarchical, re-usable and emulation compatible chip-level UVM based test bench for the verification of LC3 Micro-controller  which includes environments, agents, BFM's, predictors, coverage collectors , stimulus generators and scoreboards.}
         \item {Designed a detailed test plan and achieved 100\% coverage through constrained random testing, assertions and directed test cases.}
       \end{cvprojectitems}
     }
@@ -31,16 +31,17 @@
     {\color{darkgray}April. 2018}
     {
       \begin{cvprojectitems}
-        \item {Designed a layered test bench and a cycle accurate behavioral model to verify the data and control path of LC3 micro-controller with a comprehensive instruction set. Full functional coverage was achieved using Constrained random testing and assertions.}
+        \item {Designed a layered test bench and a cycle accurate reference model to verify the data and control path of LC3 micro-controller with a comprehensive instruction set. Full functional coverage was achieved using Constrained random testing and assertions.}
       \end{cvprojectitems}
     }
 
     \par\addvspace{0ex}
     \begin{flushleft}
     \par\addvspace{-1.5mm}
-    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}RTL Design} \ \ \textit{(\color{text}Tools: ModelSim, Synopsys Design Vision. \ \ Languages: Verilog )}}
+    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}RTL Design} \ \ \textit{(\color{text}EDA Tools: ModelSim, Synopsys Design Vision. \ \ Languages: Verilog )}}
     \end{flushleft}
     \par\addvspace{0.3ex}
+
     \cvproject
     {Hardware accelerator for simplified convolutional neural network }
     {\color{darkgray}Nov. 2017}
@@ -51,7 +52,7 @@
       \end{cvprojectitems}
     }
 
-    \cvproject
+     \cvproject
     {Synthesizable ASIC for SHA-256 Cryptographic Hash Algorithm }
     {\color{darkgray}Jan. 2019}
     {
@@ -63,34 +64,34 @@
     \par\addvspace{1ex}
     \begin{flushleft}
     \par\addvspace{-1.5mm}
-    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Architectural Simulators and Operating Systems} \ \ \textit{(\color{text} Languages: C , C++. \ \ Platforms: GPGPU-Sim, Trace Driven Simulators. )}}
+    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}CPU / GPU Architectural Simulators and Operating Systems} \ \ \textit{(\color{text} Languages: C , C++. \ \ Platforms: GPGPU-Sim, XINU OS )}}
     \end{flushleft}
     \par\addvspace{0.3ex}
-    \cvproject
-    {Phase Aware Warp Schedulling (PAWS) in GPGPU }
-    {\color{darkgray}May. 2018}
-    {
-      \begin{cvprojectitems}
-        \item {Extended GPGPU-sim \textbf{(C++)} to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR policies. Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an 8\% improvement in the IPC.} 
-      \end{cvprojectitems}
-    }
-
     \cvproject
     {Dynamic Instruction Schedulling in an OOO Superscalar Processor }
     {\color{darkgray}Nov. 2017}
     {
       \begin{cvprojectitems}
-        \item {Implemented a trace driven simulator \textbf{(C)} for an out-of-order superscalar processor based on Tomasulo’s algorithm that fetches, dispatches, issues and executes N instructions per cycle.The simulator successfully handled RAW, WAW and WAR hazards .}
+        \item {Implemented a cycle accurate simulator for an out-of-order superscalar processor based on Tomasulo’s algorithm that fetches, dispatches, issues and executes N instructions per cycle.The simulator successfully handled RAW, WAW and WAR hazards .}
       \end{cvprojectitems}
     }
 
-    \cvproject
+     \cvproject
     {Multi-level Cache Hierarchy Simulator }
     {\color{darkgray}Sept. 2017}
     {
       \begin{cvprojectitems}
-        \item {Modelled a trace driven, highly parameterized two-level cache hierarchy simulator \textbf{(C++)} with a support for L1 victim cache. }
+        \item {Modelled a trace driven, highly parameterized two-level cache hierarchy simulator with a support for L1 victim cache. }
         \item {Implemented LRU ,LFU cache replacement policies along with write through - not allocate and write back - allocate write policies.} 
+      \end{cvprojectitems}
+    }
+
+    \cvproject
+    {Phase Aware Warp Schedulling (PAWS) in GPGPU }
+    {\color{darkgray}May. 2018}
+    {
+      \begin{cvprojectitems}
+        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR policies. Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an 8\% improvement in the IPC.} 
       \end{cvprojectitems}
     }
 
@@ -99,15 +100,15 @@
     {\color{darkgray}Oct. 2017}
     {
       \begin{cvprojectitems1}
-        \item {Developed a simulator \textbf{(C++)} to model bimodal, gshare and hybrid branch predictors with Branch Target Buffer(BTB). }
+        \item {Developed a simulator to model bimodal, gshare and hybrid branch predictors with Branch Target Buffer(BTB). }
       \end{cvprojectitems1}
     }
     \par\addvspace{-1ex}
      \cvproject
-    {Bus Based and Directory Based Cache Coherence Protocol Simulator }
+    {Cache Coherence Protocol Simulator }
     {\color{darkgray}Oct. 2017}
     { \begin{cvprojectitems1}
-        \item {Implemented bus based (MSI, MOSI , MOESI) and directory based (MESI) cache coherence protocols in a multicore system with multiple directory formats.}
+        \item {Developed a trace driven multiprocessor simulator supporting MSI, MOSI, MOESI bus based cache coherence protocols.} %multicore system with multiple directory formats.}
       \end{cvprojectitems1}
     }
     \par\addvspace{-1ex}
