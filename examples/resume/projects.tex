@@ -1,8 +1,12 @@
 \par\addvspace{1ex}
 \cvsection{Projects}
-\begin{flushleft}
+\
+
+    \par\addvspace{0ex}
+
+    \begin{flushleft}
   \par\addvspace{-1.5mm}
-  \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Verification} \ \ \textit{(\color{text}EDA Tools: ModelSim, QuestaSim, Veloce Emulator.\ \ \ Languages: System Verilog , Python Scripting)}}
+  \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}Design Verification} \ \ \textit{(\color{text}EDA Tools: ModelSim, QuestaSim, Veloce Emulator.\ \ \ Languages: System Verilog , Python Scripting)}}
 \end{flushleft}
 \par\addvspace{-0.5ex}
 \begin{cvprojects}
@@ -11,8 +15,8 @@
     {\color{darkgray}Dec. 2018}
     {
       \begin{cvprojectitems}
-        \item {Constructed a hierarchical, re-usable and emulation compatible chip-level UVM based test bench for the verification of LC3 Micro-controller  which includes environments, agents, BFM's, predictors, coverage collectors , stimulus generators and scoreboards.}
-        \item {Designed a detailed test plan and achieved 100\% coverage through constrained random testing, assertions and directed test cases.}
+        \item {Constructed a hierarchical, re-usable and emulation compatible chip-level UVM based test bench for the verification of LC3 Micro-controller which includes environments, agents, BFMs, predictors,coverage collectors , stimulus generators and scoreboards.}
+        \item {Designed a detailed test plan and achieved 100\% coverage through constrained random testing, assertions and, directed tests.}
       \end{cvprojectitems}
     }
 
@@ -21,7 +25,7 @@
     {\color{darkgray}Aug. 2018}
     {
       \begin{cvprojectitems}
-        \item {Designed and Implemented a hierarchical and re-usable verification environment for APB protocol using UVM class libraries}
+        \item {Designed and Implemented a hierarchical and re-usable verification environment for APB protocol using UVM class libraries.}
         \item {The package includes APB bridge master and APB slave agents, drivers , monitors, environment, sequences and sequencers. }
       \end{cvprojectitems}
     }
@@ -31,14 +35,13 @@
     {\color{darkgray}April. 2018}
     {
       \begin{cvprojectitems}
-        \item {Designed a layered test bench and a cycle accurate reference model to verify the data and control path of LC3 micro-controller with a comprehensive instruction set. Full functional coverage was achieved using Constrained random testing and assertions.}
+        \item {Designed a layered test bench and a cycle accurate reference model to verify the data and control path of LC3 micro-controller with checkers for bug detection. 100\% functional coverage was achieved using Constrained random testing and assertions.}
       \end{cvprojectitems}
     }
 
-    \par\addvspace{0ex}
     \begin{flushleft}
     \par\addvspace{-1.5mm}
-    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}RTL Design} \ \ \textit{(\color{text}EDA Tools: ModelSim, Synopsys Design Vision. \ \ Languages: Verilog )}}
+    \fontsize{10.4pt}{1em}\selectfont\rul{\textbf{\color{black}RTL Design} \ \ \textit{(\color{text}EDA Tools: ModelSim, Synopsys Design Compiler. \ \ Languages: Verilog )}}
     \end{flushleft}
     \par\addvspace{0.3ex}
 
@@ -47,7 +50,7 @@
     {\color{darkgray}Nov. 2017}
     {
       \begin{cvprojectitems}
-        \item {Designed a synthesizable ASIC implementing the two staged convolutional neural network arithmetic on inputs read from SRAM . }
+        \item {Designed a synthesizable ASIC implementing the two staged convolutional neural network arithmetic on inputs read from SRAM. }
         \item {The design was verified for functional correctness and synthesized to achieve minimum area and clock period.} 
       \end{cvprojectitems}
     }
@@ -57,9 +60,11 @@
     {\color{darkgray}Jan. 2019}
     {
       \begin{cvprojectitems}
-        \item {Implemented the SHA-256 hash algorithm using Verilog HDL . Synthesized the RTL to gate level using Synopsys design vision and ensured the setup and hold time constraints are met. Leveraged a pipelined architecture to optimize the design for performance. }
+        \item {Designed, Debugged ,simulated and synthesized a Verilog RTL to perform the complete SHA-256 operation.  Leveraged a pipelined architecture to optimize the design for performance while meeting the timing constraints.  }
       \end{cvprojectitems}
     }
+
+ 
 
     \par\addvspace{1ex}
     \begin{flushleft}
@@ -68,11 +73,11 @@
     \end{flushleft}
     \par\addvspace{0.3ex}
     \cvproject
-    {Dynamic Instruction Schedulling in an OOO Superscalar Processor }
+    {Dynamic Instruction Scheduling in an OOO Superscalar Processor }
     {\color{darkgray}Nov. 2017}
     {
       \begin{cvprojectitems}
-        \item {Implemented a cycle accurate simulator for an out-of-order superscalar processor based on Tomasulo’s algorithm that fetches, dispatches, issues and executes N instructions per cycle.The simulator successfully handled RAW, WAW and WAR hazards .}
+        \item {Implemented a cycle-accurate simulator for an out-of-order superscalar processor based on Tomasulo’s algorithm that fetches, dispatches, issues and executes N instructions per cycle. The simulator successfully handled RAW, WAW and WAR hazards.}
       \end{cvprojectitems}
     }
 
@@ -81,26 +86,18 @@
     {\color{darkgray}Sept. 2017}
     {
       \begin{cvprojectitems}
-        \item {Modelled a trace driven, highly parameterized two-level cache hierarchy simulator with a support for L1 victim cache. }
-        \item {Implemented LRU ,LFU cache replacement policies along with write through - not allocate and write back - allocate write policies.} 
+        \item {Modeled a trace-driven, highly parameterized two-level cache hierarchy simulator with support for L1 victim cache. }
+        \item {Implemented LRU \& LFU cache replacement policies along with write through - not allocate and write back - allocate write policies.} 
       \end{cvprojectitems}
     }
 
-    \cvproject
-    {Phase Aware Warp Schedulling (PAWS) in GPGPU }
-    {\color{darkgray}May. 2018}
-    {
-      \begin{cvprojectitems}
-        \item {Extended GPGPU-sim to include Phase Aware Warp schedulling policy which performs closer to the best of GTO and RR policies. Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an 8\% improvement in the IPC.} 
-      \end{cvprojectitems}
-    }
 
     \cvproject
     {Dynamic Branch Predictor Simulator }
     {\color{darkgray}Oct. 2017}
     {
       \begin{cvprojectitems1}
-        \item {Developed a simulator to model bimodal, gshare and hybrid branch predictors with Branch Target Buffer(BTB). }
+        \item {Developed a simulator to model bimodal, gshare and hybrid branch predictors with a set-associative branch target buffer(BTB). }
       \end{cvprojectitems1}
     }
     \par\addvspace{-1ex}
@@ -113,7 +110,17 @@
     }
     \par\addvspace{-1ex}
     \cvproject
-    {Virtual Memory Management System in Xinu Operating System }
+    {Phase Aware Warp Scheduling (PAWS) on GPGPU }
+    {\color{darkgray}May. 2018}
+    {
+      \begin{cvprojectitems}
+        \item {Extended GPGPU-sim to include Phase Aware Warp scheduling policy which performs closer to the best of GTO and RR policies.}
+        \item {Benchmarked with CUDA SDK, Rodnia and Parboil kernels and achieved an 8\% improvement in the IPC.} 
+      \end{cvprojectitems}
+    }
+    \par\addvspace{0ex}
+    \cvproject
+    {Virtual Memory Management System in Xinu OS }
     {\color{darkgray}Dec. 2018}
     {
       \begin{cvprojectitems1}
